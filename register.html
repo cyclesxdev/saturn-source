@@ -130,19 +130,19 @@ function register(){
     let p = document.getElementById("pass").value;
 
     if(!u || !p){
-        alert("Preencha tudo!");
+        alert("Fill in everything!");
         return;
     }
 
     if(users[u]){
-        alert("Usuário já existe!");
+        alert("That user already exists!");
         return;
     }
 
     users[u] = p;
     localStorage.setItem("users", JSON.stringify(users));
 
-    alert("Conta criada!");
+    alert("Account created successfully!");
     location.href = "/login";
 }
 </script>

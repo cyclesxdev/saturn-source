@@ -201,7 +201,7 @@ function buyItem(btn){
     let item = btn.parentElement.getAttribute("data-item");
 
     if(inventory.includes(item)){
-        alert("Você já possui esse item!");
+        alert("You already have this item.!");
         return;
     }
 
@@ -214,7 +214,7 @@ function buyItem(btn){
     alert("Você comprou: " + item);
 }
 
-// MARCAR OWNED AO CARREGAR
+// MARK AS OWNED WHEN UPLOADING
 document.querySelectorAll(".item-card").forEach(card => {
     let item = card.getAttribute("data-item");
     let btn = card.querySelector(".buy-btn");
